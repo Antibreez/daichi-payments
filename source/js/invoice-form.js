@@ -1,5 +1,5 @@
 const $form = $('#payment-form')
-const $name = $form.find('input[name="name"]')
+const $name = $form.find('input[name="fio"]')
 const $phone = $form.find('input[name="phone"]')
 // const $surname = $form.find('input[name="surname"]')
 // const $region = $form.find('select[name="region"]')
