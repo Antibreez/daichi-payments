@@ -4,6 +4,11 @@
   border-bottom: 1px solid $grey200;
   display: flex;
   align-items: center;
+  min-height: 84px;
+
+  @include mobile {
+    min-height: 57px;
+  }
 
   &-back-link {
     margin-right: 24px;
