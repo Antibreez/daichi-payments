@@ -2342,7 +2342,11 @@ section {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  min-height: 84px; }
+  @media (max-width: 767px) {
+    .daichi-payment__header {
+      min-height: 57px; } }
   .daichi-payment__header-back-link {
     margin-right: 24px;
     -ms-flex-negative: 0;
@@ -2554,7 +2558,58 @@ section {
 .daichi-payment__main {
   padding-top: 48px;
   padding-bottom: 80px; }
+
+.daichi-payment__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.daichi-payment__result-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 24px; }
   @media (max-width: 767px) {
-    .daichi-payment__main {
-      padding-top: 24px;
-      padding-bottom: 48px; } }
+    .daichi-payment__result-icon img {
+      max-width: 74%; } }
+
+.daichi-payment__result-title {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 500;
+  margin: 0 0 16px; }
+  @media (max-width: 767px) {
+    .daichi-payment__result-title {
+      font-size: 18px; } }
+
+.daichi-payment__result-desc {
+  font-size: 16px;
+  line-height: 150%;
+  color: #6c7684;
+  margin: 0 0 24px;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .daichi-payment__result-desc {
+      font-size: 12px;
+      margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .daichi-payment__result-link {
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .daichi-payment {
+    padding-top: 24px;
+    padding-bottom: 48px; } }
