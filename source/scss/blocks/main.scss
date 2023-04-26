@@ -1,7 +1,12 @@
 .daichi-payment {
   &__main {
-    padding-top: 48px;
+    padding-top: 132px;
     padding-bottom: 80px;
+
+    @include mobile {
+      padding-top: 80px;
+      padding-bottom: 48px;
+    }
   }
 
   &__result {
