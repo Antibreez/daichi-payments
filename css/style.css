@@ -2073,7 +2073,7 @@ section {
   line-height: 120%;
   font-weight: 500;
   display: inline-block;
-  padding: 16px 24px;
+  padding: 13px 24px;
   background-color: #5EA9FF;
   border: none;
   color: #fff;
@@ -2343,10 +2343,16 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 84px; }
+  min-height: 84px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2; }
   @media (max-width: 767px) {
     .daichi-payment__header {
-      min-height: 57px; } }
+      min-height: 56px;
+      padding-bottom: 15px; } }
   .daichi-payment__header-back-link {
     margin-right: 24px;
     -ms-flex-negative: 0;
@@ -2556,8 +2562,12 @@ section {
             margin-bottom: 8px; } }
 
 .daichi-payment__main {
-  padding-top: 48px;
+  padding-top: 132px;
   padding-bottom: 80px; }
+  @media (max-width: 767px) {
+    .daichi-payment__main {
+      padding-top: 80px;
+      padding-bottom: 48px; } }
 
 .daichi-payment__result {
   display: -webkit-box;
