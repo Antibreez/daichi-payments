@@ -41,7 +41,7 @@ const removeError = $item => {
 }
 
 const checkErrors = () => {
-  console.log('errors');
+  console.log('errors')
   if (
     // hasRegionError ||
     // hasCountryError ||
@@ -208,7 +208,7 @@ const onEmailInput = () => {
   hasEmailError = false
   checkErrors()
 
-  if ($email.val().trim().match(emailRegExp)) {
+  if ($email.val().trim() !== '' && $email.val().trim().match(emailRegExp)) {
     isEmailValid = true
   } else {
     isEmailValid = false
