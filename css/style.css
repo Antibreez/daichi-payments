@@ -2417,7 +2417,8 @@ section {
   .invoice-cart__item-name {
     font-size: 12px;
     line-height: 150%;
-    color: #6c7684; }
+    color: #6c7684;
+    word-break: break-all; }
   .invoice-cart__item-divider {
     height: 8px;
     -webkit-box-flex: 1;

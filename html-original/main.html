@@ -22,35 +22,53 @@
     </header>
 
     <main class="daichi-payment__main">
-      <form id="payment-form">
+      <form id="payment-form" action="/main.html" method="GET">
         <div class="container">
           <div class="daichi-payment__invoice">
             <div class="daichi-payment__invoice-data">
               <h2 class="daichi-payment__invoice-number">Счёт №2020_418</h2>
               <p class="daichi-payment__invoice-desc">
-                Введите свои ФИО, номер телефона и&nbsp;E&#8209;mail для продолжения оплаты.
+                Введите свои ФИО, номер телефона и&nbsp;E&#8209;mail для
+                продолжения оплаты.
               </p>
               <div class="daichi-payment__invoice-user-data">
                 <div class="input">
                   <label>Укажите ФИО через пробел</label>
-                  <input type="text" name="fio" autocomplete="off">
+                  <input type="text" name="fio" autocomplete="off" />
                   <p class="input__message">Заполните поле</p>
                 </div>
                 <div class="input">
                   <label>Номер телефона</label>
-                  <input class="phone" type="text" name="phone" placeholder="+7(___)___-__-__" autocomplete="off">
+                  <input
+                    class="phone"
+                    type="text"
+                    name="phone"
+                    placeholder="+7(___)___-__-__"
+                    autocomplete="off"
+                  />
                   <p class="input__message">Введите верный номер телефона</p>
                 </div>
                 <div class="input">
                   <label>Email</label>
-                  <input type="email" name="email" placeholder="User@daichi.ru" autocomplete="off">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="User@daichi.ru"
+                    autocomplete="off"
+                  />
                   <p class="input__message">Введите верный Email</p>
                 </div>
               </div>
               <div class="daichi-payment__invoice-payment-type">
                 <div class="radio-chip">
                   <label>
-                    <input class="visually-hidden" type="radio" name="payment-type" value="sbp" checked>
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="payment-type"
+                      value="sbp"
+                      checked
+                    />
                     <div class="radio-chip__box">
                       <span class="radio-chip__text">Оплатить через СБП</span>
                       <span class="radio-chip__icon"></span>
@@ -59,7 +77,12 @@
                 </div>
                 <div class="radio-chip">
                   <label>
-                    <input class="visually-hidden" type="radio" name="payment-type" value="card">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="payment-type"
+                      value="card"
+                    />
                     <div class="radio-chip__box">
                       <span class="radio-chip__text">Оплатить по карте</span>
                       <span class="radio-chip__icon"></span>
@@ -83,9 +106,7 @@
                     </span>
                   </li>
                   <li class="invoice-cart__item">
-                    <span class="invoice-cart__item-name">
-                      Тариф Базовый
-                    </span>
+                    <span class="invoice-cart__item-name"> Тариф Базовый </span>
                     <span class="invoice-cart__item-divider"></span>
                     <span class="invoice-cart__price">
                       <span class="invoice-cart__price-value">1 440</span>
@@ -110,7 +131,9 @@
                     <span class="invoice-cart__total-currency">₽</span>
                   </span>
                 </div>
-                <button class="invoice-cart__send button" disabled>Оплатить</button>
+                <button class="invoice-cart__send button" disabled>
+                  Оплатить
+                </button>
                 <p class="invoice-cart__policy">
                   <span>Нажимая на кнопку, я соглашаюсь с</span>
                   <a href="#">
