@@ -301,32 +301,30 @@ $phone.on('input', onPhoneInput)
 $submit.on('click', onSubmit)
 
 $form.on('submit', function (e) {
-  e.preventDefault()
-
   $submit.attr('disabled', true)
 
-  const $type = $form.find(
-    '.daichi-payment__invoice-payment-type input:checked'
-  )
+  // const $type = $form.find(
+  //   '.daichi-payment__invoice-payment-type input:checked'
+  // )
 
-  const formData = {
-    [$name.attr('name')]: $name.val(),
-    [$phone.attr('name')]: $phone.val(),
-    [$email.attr('name')]: $email.val(),
-    [$type.attr('name')]: $type.val(),
-  }
+  // const formData = {
+  //   [$name.attr('name')]: $name.val(),
+  //   [$phone.attr('name')]: $phone.val(),
+  //   [$email.attr('name')]: $email.val(),
+  //   [$type.attr('name')]: $type.val(),
+  // }
 
-  $.ajax({
-    url: this.action,
-    method: this.method,
-    data: formData,
-  })
-    .done(function () {
-      console.log('###done')
-      $submit.removeAttr('disabled')
-    })
-    .fail(function () {
-      console.log('###fail')
-      $submit.removeAttr('disabled')
-    })
+  // $.ajax({
+  //   url: this.action,
+  //   method: this.method,
+  //   data: formData,
+  // })
+  //   .done(function () {
+  //     console.log('###done')
+  //     $submit.removeAttr('disabled')
+  //   })
+  //   .fail(function () {
+  //     console.log('###fail')
+  //     $submit.removeAttr('disabled')
+  //   })
 })
